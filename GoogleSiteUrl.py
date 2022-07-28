@@ -4,7 +4,7 @@ import urllib
 from scrapy import Selector
 from selenium import webdriver
 
-proxy={"http":"xf123456789-zone-custom:123456:proxy.ipidea.io:2333"}
+proxy={"http":"*"}
 
 class  GoogleSiteUrl:
     def __init__(self):
