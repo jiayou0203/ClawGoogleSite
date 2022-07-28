@@ -14,11 +14,12 @@ class  GoogleSiteUrl:
     def start_crawl(self):
         self.browser.get('https://www.google.com/search?q=%s' %self.key_world)
         self.browser.implicitly_wait(3)
-        xpath_urls='//div[@class='']/a"]'
-        urls_pre=self.browser.find_element_by_xpath(xpath_urls)
-        url=urls_pre[0].get_attribute("href")
-        time.sleep(3)
-        print(url)
+        xpath_urls='//div[@class="yuRUbf"]/a'
+        urls_pre = self.browser.find_elements("xpath",xpath_urls)
+        for i in range(0, len(urls_pre)):
+            url = urls_pre[i].get_attribute("href")
+            time.sleep(3)
+            print(url)
 
 
 if __name__=='__main__':
