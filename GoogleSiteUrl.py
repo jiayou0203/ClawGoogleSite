@@ -12,7 +12,7 @@ class  GoogleSiteUrl:
     def __init__(self):
         self.browser=webdriver.Chrome('C:\Program Files\Google\Chrome\Application\chromedriver.exe')
         self.key_world = input('Please input the content of the picture you want to grab >:')
-        self.browser.get('https://www.google.com/search?q=%s' % self.key_world)
+        self.browser.get('https://www.google.com/search?q=%s' % self.key_world)           #google搜索
 
 
     #获取网页匹配的超链接数据并提取出来url
