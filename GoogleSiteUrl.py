@@ -51,6 +51,8 @@ if __name__=='__main__':
     i=0                  #匹配网页计数器
     try:
         while(True):
+            if i == 1:
+                break
             Href_Result=google_url.start_crawl()              #获取网页匹配的超链接数据
             List_Result=google_url.RemoveRepeat(Href_Result)  #将上一步获取的网页超链接加入到列表中
             Google_Next_Result=google_url.Start_Next_Click()                     #点击下一页按钮
@@ -59,4 +61,13 @@ if __name__=='__main__':
             print(i)
     except:
         pass
-    print("List_Result is:"%len(List_Result))
+
+    for List_Data in List_Result:
+        print("List_Data is:",List_Data)
+        try:
+            Domain_Name_Jiexi=BrowserMobProxy().Proxy_Domain_Name(List_Data)
+        except:
+            pass
+        time.sleep(20)
+
+

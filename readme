@@ -1,0 +1,4 @@
+chromedriver.exe:
+将chromedriver.exe拷贝至谷歌浏览器目录（如 C:\Program Files\Google\Chrome\Application）以及python根目录（C:\Python27）
+proxytest.har:必须
+browsermob-proxy.bat:必须，根目录browsermob-proxy-2.1.4\bin中

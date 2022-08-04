@@ -11,6 +11,7 @@ class BrowserMobProxy:
 
     def __init__(self):
         # 代理中继及中继端口启动
+
         self.port = {"port":8800}
         self.server = Server(r"E:\pdf\src\browsermob-proxy-2.1.4-bin\browsermob-proxy-2.1.4\bin\browsermob-proxy.bat")
         self.server.start()
@@ -22,12 +23,25 @@ class BrowserMobProxy:
         self.driver = webdriver.Chrome(options=self.chrome_option)
 
 
-    def Proxy_Domain_Name(self,Doamin_Name):
-        base_url = Doamin_Name
+
+    def Proxy_Domain_Name(self,Domain_Name):
+        #base_url = "https://app-portal-ppe1.envisioniot.com/forget-password/done"
+        base_url = Domain_Name
         self.proxy.new_har(options={'captureHeaders': True, 'captureContent': True})
         self.driver.get(base_url)
         result=self.proxy.har
+        with open('proxytest.har', 'w') as outfile:
+            json.dump(self.proxy.har, outfile)
+        # 从抓取遍历
+        re_date = {'qingqiu_head': 1, 'huifu_head': 2, 'qingqiu_url': 3, 'huifu_url': 4}
+        for entry in result['log']['entries']:
+            _url = entry['request']['url']
+            print(len(entry['request']['headers']))
+            print(_url)
         self.proxy.close()
         self.server.stop()
         self.driver.quit()
+
+
+
 
