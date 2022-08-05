@@ -25,11 +25,11 @@ class BrowserMobProxy:
 
 
     def Proxy_Domain_Name(self,Domain_Name):
-        #base_url = "https://app-portal-ppe1.envisioniot.com/forget-password/done"
-        base_url = Domain_Name
+        base_url = "https://app-portal-ppe1.envisioniot.com/forget-password/done"
+       # base_url = Domain_Name
         self.proxy.new_har(options={'captureHeaders': True, 'captureContent': True})
         self.driver.get(base_url)
-        result=self.proxy.har
+        result=self.proxy.har                                      #HTTP 请求和响应、捕获 HTTP 内容并将性能数据导出为HAR 文件
         with open('proxytest.har', 'w') as outfile:
             json.dump(self.proxy.har, outfile)
         # 从抓取遍历
