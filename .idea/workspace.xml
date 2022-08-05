@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b117b3c-3e1d-4fbb-a984-e300ba5409f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Parse_Domain_Name.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="31" column="78" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="104" />
+            <state relative-caret-position="435">
+              <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
               <folding>
                 <element signature="e#23#57#0" expanded="true" />
               </folding>
@@ -75,8 +75,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="303" />
-    <option name="y" value="65" />
+    <option name="x" value="324" />
+    <option name="y" value="17" />
     <option name="width" value="1400" />
     <option name="height" value="993" />
   </component>
@@ -186,7 +186,7 @@
       <workItem from="1659090174781" duration="21228000" />
       <workItem from="1659574999315" duration="5000" />
       <workItem from="1659575015091" duration="4474000" />
-      <workItem from="1659661473993" duration="4256000" />
+      <workItem from="1659661473993" duration="4513000" />
     </task>
     <task id="LOCAL-00001" summary="10.26">
       <created>1658976161540</created>
@@ -258,16 +258,31 @@
       <option name="project" value="LOCAL" />
       <updated>1659665599478</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="#HTTP 请求和响应、捕获 HTTP 内容并将性能数据导出为HAR 文件">
+      <created>1659665913575</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1659665913575</updated>
+    </task>
+    <task id="LOCAL-00012" summary="#HTTP 请求和响应、捕获 HTTP 内容并将性能数据导出为HAR 文件.8.5">
+      <created>1659666132141</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1659666132141</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39774000" />
+    <option name="totallyTimeSpent" value="40031000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="949" y="461" width="1400" height="993" extended-state="0" />
+    <frame x="324" y="17" width="1400" height="993" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26044777" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26044777" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -281,7 +296,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="GitHub Pull Requests" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5052239" side_tool="true" visible="true" weight="0.43189755" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="11" sideWeight="0.5052239" side_tool="true" visible="true" weight="0.43189755" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4989339" weight="0.29067245" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -303,7 +318,8 @@
     <MESSAGE value="域名解析模块" />
     <MESSAGE value="谷歌搜索结果匹配域名提取+域名自动请求" />
     <MESSAGE value="#HTTP 请求和响应、捕获 HTTP 内容并将性能数据导出为HAR 文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="#HTTP 请求和响应、捕获 HTTP 内容并将性能数据导出为HAR 文件" />
+    <MESSAGE value="#HTTP 请求和响应、捕获 HTTP 内容并将性能数据导出为HAR 文件.8.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="#HTTP 请求和响应、捕获 HTTP 内容并将性能数据导出为HAR 文件.8.5" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ClawGoogleSite$Selweb.coverage" NAME="Selweb Coverage Results" MODIFIED="1659575411506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -345,8 +361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Parse_Domain_Name.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="31" column="78" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="104" />
+        <state relative-caret-position="435">
+          <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
           <folding>
             <element signature="e#23#57#0" expanded="true" />
           </folding>
